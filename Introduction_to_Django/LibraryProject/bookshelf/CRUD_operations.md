@@ -36,8 +36,18 @@ Objective: Update the title of “1984” to “Nineteen Eighty-Four
 
 **Command:**
 ```python
->>> Book.objects.filter(title='1984').update(title='Nineteen Eighty-Four')
+>>> book = Book.objects.get(title='1984')
+>>> book.title = 'Nineteen Eighty-Four'
+>>> book.save()
+>>> print(book.title)
 ```
+
+**Output (for the update commands above):**
+```python
+(1, {'bookshelf.Book': 1})
+<QuerySet []>
+```
+
 
 ### Delete Operation
 
@@ -45,10 +55,13 @@ Objective: Delete the book and confirm deletion by checking if any books exist.
 
 **Command:**
 ```python
->>> Book.objects.filter(title='Nineteen Eighty-Four').delete()
+from bookshelf.models import Book
+
+>>> book = Book.objects.get(title='Nineteen Eighty-Four')
+>>> book.delete()
 >>> Book.objects.all()
 ```
-**Output (for each command above):**
+**Output (for the delete commands above):**
 ```python
 (1, {'bookshelf.Book': 1})
 <QuerySet []>
