@@ -40,6 +40,7 @@ All shell commands and outputs related to Create, Retrieve, Update, and Delete o
 - `retrieve.md`
 - `update.md`
 - `delete.md`
+
 all store inside the bookshelf app
 ---
 
