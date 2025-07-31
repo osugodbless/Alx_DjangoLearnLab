@@ -33,7 +33,7 @@ This repository contains the implementation of the **Introduction to Django** pr
 
 ## 🗂️ Documentation
 
-All shell commands and outputs related to Create, Retrieve, Update, and Delete operations are documented in:
+All shell commands and outputs related to Create, Retrieve, Update, and Delete operations are documented [here](./Introduction_to_Django/LibraryProject/bookshelf/) as:
 
 - `CRUD_operations.md`
 - `create.md`
@@ -41,7 +41,6 @@ All shell commands and outputs related to Create, Retrieve, Update, and Delete o
 - `update.md`
 - `delete.md`
 
-all store inside the bookshelf app
 ---
 
 ## How to Run
