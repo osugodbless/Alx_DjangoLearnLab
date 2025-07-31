@@ -66,5 +66,6 @@ all store inside the bookshelf app
     python3 manage.py runserver
     ```
 
-5. Visit http://127.0.0.1:8000 in your browser
+5. Visit http://127.0.0.1:8000/book in your browser
 
+**Note:** The model has also been registered in Django admin site. To access the admin panel, make sure you create a superuser first using the `python3 manage.py createsuperuser` command. Then, navigate to [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) and log in with your superuser credentials.
